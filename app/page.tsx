@@ -176,27 +176,27 @@ function CurrentlyBuilding() {
       accent="coral"
     >
       <PaperCard className="overflow-hidden p-0">
-        <div className="border-b border-[#050505] bg-[#050505] px-7 py-5 sm:px-9">
-          <div className="flex items-center justify-between gap-4">
-            <Image src={mirageLogo} alt="Mirage" className="h-20 w-auto object-contain" />
+        <div className="border-b border-[#050505] bg-[#050505] px-4 py-4 sm:px-9 sm:py-5">
+          <div className="flex min-w-0 items-center justify-between gap-3">
+            <Image src={mirageLogo} alt="Mirage" className="h-14 w-auto min-w-0 object-contain sm:h-20" />
             <a
               href={links.mirage}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-[var(--ink)] transition-colors hover:text-[var(--coral)]"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold leading-tight text-[var(--ink)] transition-colors hover:text-[var(--coral)] sm:px-4"
             >
-              Visit Mirage
+              <span>Visit Mirage</span>
               <ArrowIcon />
             </a>
           </div>
         </div>
         <div className="grid gap-0 lg:grid-cols-2">
-          <div className="flex flex-col p-7 sm:p-9">
+          <div className="flex min-w-0 flex-col p-6 sm:p-9">
             <Badge tone="coral">Mirage · trymirage.app</Badge>
-            <h2 className="mt-5 max-w-2xl text-4xl font-semibold leading-[1] tracking-[-0.055em] text-[var(--ink)] sm:text-5xl">
+            <h2 className="mt-5 max-w-2xl text-[2.65rem] font-semibold leading-[1] tracking-[-0.055em] text-[var(--ink)] sm:text-5xl">
               The internet looks the same for everyone. It shouldn&apos;t.
             </h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
               Mirage lets anyone reshape any website into their own version of it using AI -
               not themes, not CSS. AI rebuilding the interface itself, permanently.
             </p>
@@ -205,7 +205,7 @@ function CurrentlyBuilding() {
               <Tag tone="coral">Co-founder</Tag>
             </div>
           </div>
-          <div className="border-t border-[var(--border)] bg-[#F7F5F1] p-6 lg:border-l lg:border-t-0">
+          <div className="min-w-0 border-t border-[var(--border)] bg-[#F7F5F1] p-6 lg:border-l lg:border-t-0">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--coral)]">
               Works everywhere
             </p>
@@ -216,14 +216,14 @@ function CurrentlyBuilding() {
               <br />
               Every site you visit.
             </h3>
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-6 flex max-w-full flex-wrap gap-2 overflow-hidden">
               {browserChips.map((chip) => (
                 <LogoChip key={chip.label} icon={chip.icon}>
                   {chip.label}
                 </LogoChip>
               ))}
             </div>
-            <div className="mt-8 overflow-hidden rounded-[18px] border border-[var(--border)] bg-white py-4 shadow-[0_8px_24px_rgba(26,26,26,0.04)]">
+            <div className="mt-8 max-w-full overflow-hidden rounded-[18px] border border-[var(--border)] bg-white py-4 shadow-[0_8px_24px_rgba(26,26,26,0.04)]">
               <MovingSiteRow reverse={false} />
               <TypedPrompt />
             </div>
@@ -598,7 +598,7 @@ function RecognitionPill({ item }: { item: RecognitionItem }) {
 
 function TypedPrompt() {
   return (
-    <div className="mx-4 mt-4 rounded-[14px] border border-[var(--border)] bg-[#FAF8F5] px-4 py-3 text-sm font-semibold text-[var(--ink)]">
+    <div className="mx-4 mt-4 overflow-hidden rounded-[14px] border border-[var(--border)] bg-[#FAF8F5] px-4 py-3 text-sm font-semibold text-[var(--ink)]">
       <span className="mr-2 text-[var(--coral)]">Prompt</span>
       <span className="typed-prompts" aria-label="Example Mirage prompts">
         <span>Hide YouTube Shorts.</span>

@@ -49,7 +49,7 @@ body {
 
 .typed-prompts {
   display: inline-grid;
-  min-width: 15rem;
+  max-width: 100%;
   vertical-align: bottom;
 }
 
