@@ -67,9 +67,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <span className="rounded-full bg-[rgba(168,196,188,0.22)] px-3 py-1.5 text-xs font-semibold text-[var(--muted)]">
               {article.readTime}
             </span>
-            <span className="rounded-full bg-[rgba(232,118,90,0.12)] px-3 py-1.5 text-xs font-semibold text-[var(--muted)]">
-              Written by me
-            </span>
           </div>
           <h1 className="mt-7 max-w-3xl text-4xl font-semibold leading-[0.98] tracking-[-0.06em] text-[var(--ink)] sm:text-6xl">
             {article.title}
@@ -77,6 +74,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
             {article.excerpt}
           </p>
+          <p className="mt-5 text-sm italic text-[var(--muted)]">Written by me</p>
         </header>
 
         <div className="mx-auto mt-8 max-w-[680px] space-y-6 text-lg leading-[1.75] text-[var(--muted)]">

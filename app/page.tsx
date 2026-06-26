@@ -433,12 +433,7 @@ function ArticleCard({ article }: { article: Article }) {
         <div className="flex min-h-[260px] flex-col border-b border-[var(--border)] bg-[#F7F5F1] p-5">
           <div className="flex items-center justify-between gap-3">
             <Badge>Article</Badge>
-            <div className="flex items-center gap-2">
-              <span className="rounded-full bg-[rgba(232,118,90,0.12)] px-3 py-1.5 text-xs font-semibold text-[var(--muted)]">
-                Written by me
-              </span>
-              <span className="text-xs font-medium text-[var(--muted)]">{article.readTime}</span>
-            </div>
+            <span className="text-xs font-medium text-[var(--muted)]">{article.readTime}</span>
           </div>
           <div className="mt-5 flex flex-1 flex-col rounded-[16px] border border-[var(--border)] bg-white p-4 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.7)]">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--sage)]">
@@ -453,9 +448,14 @@ function ArticleCard({ article }: { article: Article }) {
           </h3>
           <div className="mt-auto flex items-center justify-between gap-4 pt-8 text-sm font-semibold">
             <span className="text-[var(--muted)]">Read article</span>
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] bg-white text-[var(--ink)] transition-colors group-hover:border-[var(--coral)] group-hover:text-[var(--coral)]">
-              <ArrowIcon />
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-normal italic text-[var(--muted)]">
+                Written by me
+              </span>
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] bg-white text-[var(--ink)] transition-colors group-hover:border-[var(--coral)] group-hover:text-[var(--coral)]">
+                <ArrowIcon />
+              </span>
+            </div>
           </div>
         </div>
       </PaperCard>
