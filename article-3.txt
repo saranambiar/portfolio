@@ -1,0 +1,184 @@
+I Spent $500 Making Videos with Codex + HyperFrames and Here's What I Learned (title)
+
+Over the last month I've been experimenting with @HyperFrames_ by @HeyGen.
+Over the last 2 weeks, I've been completely videomaxxing with it.
+
+Somewhere along the way I spent close to $500 generating scenes, rebuilding animations, fixing transitions, syncing audio, correcting captions, re-rendering sections, and making changes that looked simple but somehow took three more renders to get right.
+I learned a lot.
+
+The biggest thing I learned wasn't actually about HyperFrames. It was about video production.
+
+Going in, I thought the hard part would be creating scenes. I was wrong. HyperFrames is actually very good at creating scenes.
+
+Most of my time ended up being spent on everything around them. Getting animations to line up with narration. Making transitions feel natural. Keeping continuity between scenes. Fixing captions. Integrating product demos. Making small changes without accidentally affecting something else.
+
+None of these things are particularly difficult individually. But they add up quickly.
+
+The more videos I made, the more I realized that generating the scene is only one part of the process.
+
+A polished video needs an entire production workflow around it and that's where most of my learning happened.
+
+Because I kept running into the same production problems, I started turning solutions into reusable workflows - scene continuity, audio synchronization, caption generation, render QA, surgical edits, FFmpeg assembly.
+
+Over time, that evolved into a repository of skills, templates, utilities, and production workflows that now sit around every HyperFrames project I work on.
+Repository:
+https://github.com/saranambiar/hyperframes-video-agent-skills
+
+If you're working with HyperFrames, Codex, or agent-driven video creation, there's a good chance you'll run into many of the same problems.
+
+It's not an official HyperFrames repository. It's essentially the production layer I found myself building around HyperFrames while creating launch videos, demos, explainers and product showcases.
+
+Why I Started Using HyperFrames (subheading)
+
+For anyone unfamiliar, HyperFrames is an open-source framework for creating videos using HTML, CSS, JavaScript, SVG and browser-native animation.
+
+Instead of dragging things around in a timeline editor, you're building scenes as code.
+
+For me, that was the biggest attraction. I spend most of my time working with coding agents already.
+HyperFrames fit naturally into that workflow. 
+
+Codex could read it, modify it and reason about it. The feedback loop felt familiar. I didn't need to learn a completely new tool. I could stay inside an environment I already understood.
+
+And for scene creation, HyperFrames is genuinely pretty good.
+Charts. Glassmorphism interfaces. Animated diagrams. Product mockups. Camera movements. Motion-heavy explainer visuals. CTA screens.
+Anything that benefits from precise control over animation tends to work extremely well.
+
+What HyperFrames Does Really Well (subheading)
+
+The biggest strength of HyperFrames is that scenes are source-editable.
+
+You aren't trapped inside a rendered video. You can change a label. Adjust a color. Modify timing. Move a layout. Replace a component.
+All without rebuilding the entire project.
+
+That sounds obvious until you're 20 renders deep into a project. Small changes stay small. Iteration stays fast.
+
+Another thing I liked was how naturally it worked with coding agents. Most video tools aren't designed around agent workflows. HyperFrames feels like it is.
+
+The combination of HyperFrames and Codex made it possible to iterate much faster than traditional video workflows.
+
+Where Most of My Time Actually Went (subheading)
+
+The surprising thing was that scene generation wasn't usually the bottleneck.
+
+The bottleneck was everything around it. Narration timing. Audio synchronization. Continuity between scenes. Caption styling. Music. Product demos. Transitions. Final QA.
+
+HyperFrames is great at creating scenes.
+
+But it doesn't magically solve the production process around those scenes.
+
+A chart updated in one scene might still be wrong in the next. A caption might appear half a second late. A transition might technically work but feel strange. A product demo might be cropped too aggressively.
+None of these issues are major by themselves.
+But they're exactly the kinds of details people notice when watching a finished video.
+
+The Importance of Reference Assets (subheading)
+
+One thing I started doing very quickly was creating dedicated reference asset folders for every video.
+
+Logos. Product screenshots. Brand assets. UI references. Previous scenes. Style references.
+Anything that could help communicate what I wanted.
+
+At first I thought these were mostly for me. They ended up being even more useful for the agent. The more context I gave upfront, the less guessing it had to do.
+
+Instead of describing a layout, I could show it one.
+Instead of describing a brand style, I could provide examples.
+Instead of explaining how a product looked, I could give it screenshots.
+
+A lot of people treat prompting as the primary input.
+I increasingly found that assets were often more important than prompts. Good reference material dramatically reduced ambiguity and usually resulted in fewer iterations.
+
+The fastest projects were almost always the ones where I spent more time preparing context before generating anything.
+
+The Biggest Iteration Killer: Concept Images (subheading)
+
+If I had to pick one thing that reduced iteration count the most, it would be concept images.
+
+Before creating most major scenes, I started generating a concept image of what I wanted the final frame to look like (simply prompted ChatGPT to generate an exact concept image of what i wanted the target state of a scene to look like).
+Not a moodboard and not inspiration. An actual target state.
+Then I'd give that image to Codex alongside the scene requirements. The difference was huge.
+
+Without a concept image, the agent was forced to interpret what I meant.
+With a concept image, it knew exactly what it was working towards.
+
+Layout. Hierarchy. Spacing. Composition. Visual style. All of it became much clearer.
+
+The conversation shifted from:
+"Make this better." to "Make this look like this."
+That sounds like a small difference. It isn't.
+
+Once the target became concrete, iteration count dropped dramatically. The agent wasn't guessing anymore. It was converging.
+
+Iteration Matters More Than Generation (subheading)
+
+Another thing I underestimated was how important versioning and iteration are.
+
+The first version is rarely the final version. Sometimes the first version isn't even close.
+
+The projects that turned out best weren't the ones where the first render looked amazing. They were the ones where I could iterate quickly.
+Generate. Review. Adjust. Generate again.
+
+The combination of HyperFrames and Codex works particularly well because scenes are source-editable.
+Small changes stay small. You don't need to rebuild everything every time.
+
+The goal isn't getting the perfect output immediately. The goal is reducing the cost of getting to the perfect output.
+
+Once I started thinking that way, the entire workflow became much less frustrating.
+
+Instead of expecting the first render to be correct, I started optimizing for how quickly I could get to the next version.
+
+The Most Useful Prompting Lesson I Learned (subheading)
+
+The biggest difference between good outputs and bad outputs was specificity. Not just more prompting. More precise prompting.
+
+Couple of examples from a B2B launch video I was working on -
+Early on, I would write things like: "Make the graph appear more gradually."
+The results were inconsistent.
+
+What worked much better was:
+"The graph should start increasing at second 5 and reach the first point by second 6, then the next by second 7, then the next by second 8, and the final point by second 10. Points should only appear once the line reaches them."
+One prompt describes an outcome. The other describes behavior.
+
+The same thing happened with audio.
+Instead of:
+"Sync the audio better."
+What worked was:
+"When she says 'Until now', the title card should begin appearing. When she says 'Company X is...', the title should already be visible and the transition into the next layout should begin. After the sentence ends, hold the frame for two seconds before continuing."
+The successful prompts weren't asking for synchronization.
+They were defining the relationship between spoken words and visual states.
+
+Another lesson I learned was that protecting good work is often more important than generating new work.
+Instead of:
+"Create Scene 02."
+What worked much better was:
+"Do not modify Scene 01. Treat it as approved. Scene 02 must begin from the exact final frame of Scene 01 and continue the visual story seamlessly."
+This sounds simple.
+But it prevented the system from repeatedly changing things that were already working.
+
+A surprising amount of iteration time gets wasted when agents try to improve work that has already been approved.
+
+What HyperFrames Doesn't Solve By Itself (subheading)
+
+The more projects I worked on, the more I realized that HyperFrames is one layer of a larger workflow.
+
+It doesn't automatically solve: Narration timing, caption alignment, music ducking, continuity between scenes, proof-frame extraction, visual QA.
+Final assembly or surgical edits.
+Those still need systems around them.
+
+In my case, most of those systems ended up being a combination of Codex workflows, FFmpeg utilities, templates, verification steps and reusable production skills.
+That's ultimately what ended up in the repository. Not scene generation.
+
+The repeatable things that happen after scene generation.
+
+The Biggest Takeaway (subheading)
+
+Going into this, I thought AI-powered video creation was primarily a scene generation problem.
+
+Coming out of it, I think it's much closer to a production workflow problem.
+
+HyperFrames is excellent at making scenes. But polished videos need much more than scenes.
+They need timing, continuity, audio, captions, music, verification.
+And a process that keeps all of those pieces working together as the video evolves. That's the part I underestimated.
+
+It's also the part where I learned the most.
+
+If you're working with HyperFrames, Codex, or coding-agent-based video workflows, hopefully some of these lessons save you a few hundred dollars and a lot of unnecessary re-renders.
+And if you've discovered similar patterns, I'd love to hear what you've learned too.

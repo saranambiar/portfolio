@@ -1,0 +1,96 @@
+Loop Engineering: How We Build Adaptive Software at Mirage (title)
+
+We haven't been trying to build a coding agent. We've been trying to teach an agent what a website should become.
+
+Mirage exists because we believe software is entering a new era.
+
+For decades, websites have been one-size-fits-all. Every user gets the same interface, the same workflows, and the same experience. If a website doesn't work the way you want it to, your only option is to adapt yourself to the software.
+
+Coding agents today change that.
+
+For the first time, software can become adaptive. Interfaces can change. Workflows can change. Websites can reshape themselves around the people using them.
+
+That's the future we're building towards at Mirage.
+
+But before we could build agents that transform websites, we had to solve a different problem first.
+
+How do you reliably get an agent to create the experience you actually want?
+1. The first thing we learned is that coding wasn't the hard part. The hard part was convergence. (bold)
+
+One thing became obvious very quickly. The quality of the result was directly proportional to how clearly we defined the destination. 
+
+Vague goals produced vague outcomes. The agent needed something concrete to converge toward.
+So instead of describing end states, we started creating defined concept images for what we wanted our ideal version of the website to look like. Not inspiration or references. Actual target states.
+
+The concept became the source of truth.
+
+Every iteration was judged against that target.
+The objective wasn't "make this look better." 
+The objective became: "Make reality match the concept." Once we had a clear destination, we started building the rest of the loop around it.
+
+2. The next challenge was visibility. (bold)
+An agent can't improve what it can't observe.
+We connected Browser MCP so the system could interact with the websites it was transforming. It could observe the current experience, evaluate the results of its own changes, compare reality against the target, and identify the next gap to close.
+Instead of operating blindly, it could learn directly from the environment it was modifying.
+
+3. Every iteration taught us something valuable. And then the agent forgot it. (bold)
+A pattern would emerge -> A transformation strategy would work particularly well. A site-specific edge case would appear. A verification technique would catch an issue repeatedly. A certain implementation approach would consistently fail.
+
+The lessons were valuable, but they lived inside individual sessions.
+So we started writing them down.
+
+We built collections of skills, instructions, implementation patterns, verification procedures, lessons learned, common mistakes, and platform-specific knowledge. 
+Over time this evolved into a growing markdown-based knowledge base that agents could continuously reference and build upon. Instead of rediscovering solutions every session, the system began accumulating knowledge.
+
+The loop wasn't just improving the product anymore. It was improving its own ability to improve the product.
+That was the point where things started getting interesting. The workflow itself became surprisingly simple.
+
+Define a goal.
+Implement changes.
+Apply the transformation.
+Inspect the result.
+Compare against the target.
+Identify the gaps.
+Iterate.
+Again and again.
+
+The objective wasn't writing code. The objective was reducing the distance between reality and the goal.
+Recently, both @bcherny and @steipete have talked about an idea that we've found ourselves increasingly agreeing with: The value isn't in prompting agents. The value is in creating loops around them.
+That idea immediately resonated with us when we came across the description of loop engineering @addyosmani gave.
+Because without really calling it that, it's how we ended up building Mirage. We weren't sitting there manually prompting coding agents all day.
+
+Instead, we built a system around them. A loop.
+
+First, the system would observe the current state of the website.
+Then it would compare that against the version we were trying to create.
+The gap between those two states became the next prompt.
+The coding agents would implement changes.
+The system would verify whether those changes actually moved the website closer to the desired outcome.
+The successful patterns would be remembered.
+Then the cycle would start again.
+
+Observe.
+Evaluate.
+Prompt.
+Verify.
+Remember.
+Over and over.
+
+What started as manually writing prompts slowly became a process of generating prompts from the gap itself.
+The website became feedback.
+The desired experience became the objective.
+
+And the loop continuously tried to reduce the distance between the two.
+
+What's interesting is that this ended up becoming the exact process behind Mirage itself.
+We're building a product based on a simple belief: People shouldn't have to adapt themselves to software. Software should adapt itself to people.
+To build adaptive websites, we first had to build adaptive systems.
+
+Systems that could observe a goal, evaluate reality, generate the next action, learn from the result, and continue iterating.
+A lot of the websites you've seen us create weren't the result of a single prompt.
+
+They emerged from hundreds of iterations through that loop.
+
+That's why Addy's framing of loop engineering resonated so strongly with us. It wasn't describing a technique we wanted to try.
+
+It was describing the process we had already found ourselves using every day while building Mirage.

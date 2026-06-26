@@ -1,0 +1,98 @@
+The Internet Got Personal. Your Interface Didn't. (title)
+
+The interface you're looking at right now wasn't designed for you. It was designed for a version of you.
+
+Averaged. Approximated. Collapsed into a persona with a name like "Sarah, 32, uses Chrome, prefers simplicity."
+Sarah is fictional. You are not.
+
+For decades, that gap didn't matter enough to close. The internet has spent 30 years personalizing almost everything except the one thing you actually touch.
+
+Netflix knows what you'll watch. Spotify knows what you'll listen to. TikTok knows what you'll scroll. Netflix estimates roughly 80% of viewing activity comes from its recommendation engine. Entire trillion-dollar businesses were built on the observation that different people want different things.
+
+The interface remained the exception. Not because it should have been. Because it had to be.
+
+One-size-fits-all UI was never a design philosophy (subheading)
+
+It was a constraint.
+
+Building software was expensive. Changing it was more expensive. Every button, workflow, and interaction had to be designed, implemented, tested, and maintained. When companies served millions of users, building millions of interfaces wasn't a product problem - it was an impossible engineering one.
+
+So designers found a proxy.
+
+The persona(bold). A handful of researched archetypes standing in for millions of real people. Jakob Nielsen's research showed that testing with just 5 users surfaces roughly 85% of usability issues - which sounds like a shortcut until you realize it was the most rigorous thing the economics allowed. Design for the middle of the distribution. Lose the edges. Ship the product.
+
+Software was built for the average. And you're not average.
+
+Adaptive interfaces were tried earlier than most people realize. Researchers in the 2000s built systems that learned from behavior and adjusted accordingly. They largely failed - not because the idea was wrong, but because users couldn't predict what the interface would do next, and unpredictability kills trust. The opportunity was real. The technology wasn't ready.
+
+So one-size-fits-most survived. Not because designers lacked imagination but because the tools to do better didn't exist yet.
+
+The people who refused to accept it (subheading)
+
+While most users adapted themselves to software, a smaller group did the opposite.
+
+They installed browser extensions, wrote userscripts, injected custom CSS. They tried to reshape software around themselves.
+
+Tampermonkey has around 12 million Chrome installs. Dark Reader sits at 7 million on Chrome alone. Stylus has around a million. BetterDiscord has over 5 million. Notion's template gallery hosts over 30,000 community-built configurations. Obsidian's plugin ecosystem numbers in the thousands.
+
+This wasn't niche behavior. The prosumer wasn't the market, they were an early warning system.
+
+Nobody spends a Saturday debugging userscripts because they enjoy maintaining userscripts. They do it because the default experience doesn't fit. The researcher wants density. The developer wants speed. The ADHD user wants focus. Different people, same frustration - so users adapt themselves instead.
+
+Call it what it is: The Interface Lag. We personalized what people consume. We never personalized how they consume it.
+
+The demand was always there. The barrier was access. Customization required code. Code is a high bar. Most people who wanted a different interface never got one - not because they didn't care, but because caring wasn't enough.
+
+Then the cost of building software collapsed (subheading)
+
+AI didn't change interfaces immediately. The first wave (ChatGPT, early Copilot) made content smarter. The container stayed the same. The toolbar stayed where it was. The workflow remained unchanged.
+
+For a moment, it looked like the Interface Lag would survive AI too. Then coding agents arrived, and the economics broke.
+
+GitHub Copilot reached 20 million users by mid-2025. Cursor (now being acquired by SpaceX for $60 billion) became the tool of choice for more than half the Fortune 500. Jensen Huang called it his favorite enterprise AI service. These aren't productivity stories. They're signals about where economic value is moving.
+
+Y Combinator (@agupta) named it directly in their Summer 2026 RFS: "Dynamic Software Interfaces - coding agents are good enough now that users can reshape software for their own needs."
+
+That's not a prediction. That's a consensus.
+
+The cost of creating software fell. More importantly, the cost of changing software fell with it. For decades, interface modification required technical skill. Increasingly, it requires intent. Describe what you want. The agent handles the implementation.
+
+The barrier wasn't desire. It was access. (subheading)
+
+The 12 million Tampermonkey users were never the market. They were the ceiling imposed by technical ability. Behind them sits everyone who wanted the same thing but couldn't pay the technical tax to get there.
+
+Knowledge workers switch between more than 10 applications daily, losing roughly 4 hours of effective work per week to context-switching. Research says it takes around 23 minutes to fully refocus after an interruption. Generic interfaces aren't a neutral inconvenience, they're a measurable tax on attention, paid by everyone, every day.
+
+Those people aren't going to learn userscripts. But they can describe what they want. And these days, that's all it takes.
+
+What adaptive actually means (subheading)
+
+Not themes. Not settings menus. Not dark mode.
+
+Think about the last time software got in your way. A toolbar you never use. A sidebar full of features irrelevant to you. A workflow that makes you click four times when once would do. Now imagine that friction simply wasn't there - because the interface had already learned it wasn't yours.
+
+Now, imagine three people opening YouTube.
+
+One sees a podcast player. No recommendations, no comments. Just episodes.
+
+Another sees a research environment. Transcripts, notes, sources, context.
+
+A third sees something closer to Netflix. Collections, discovery, long-form recommendations.
+
+Same website. Three different experiences. The interface adapts because the user is different - not because the website is.
+
+This isn't personalization within a fixed frame anymore, the frame itself changes. The prior research identified exactly why earlier attempts failed: unpredictability broke trust. The fix isn't to stop adapting - it's to adapt transparently, with clear explanations. Current AI is substantially better at this than anything that existed when the first attempts were made.
+
+The researchers were right all along. The opportunity existed. The timing didn't.
+
+The last layer catching up (subheading)
+
+I suspect we'll look back at the internet as evolving in three phases.
+
+First, we personalized information. Then we personalized content. Next, we personalize interfaces.
+
+For most of computing history, users adapted themselves to software. That made sense when software was expensive and fixed. It makes less sense when software can reshape itself around you in real time.
+
+One-size-fits-all was never a philosophy. It was the best answer to an impossible problem, given the tools available at the time. The tools changed.
+
+The internet got personal years ago. The interface is simply the last layer catching up.
